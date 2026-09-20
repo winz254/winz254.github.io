@@ -1,40 +1,143 @@
-﻿<!DOCTYPE html>
-<html lang="zh-TW">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>winz254 的個人網站</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; max-width: 800px; margin: auto; background: #f4f4f9; color: #333; }
-        header { background: #24292e; color: #fff; padding: 30px; text-align: center; border-radius: 8px; }
-        section { background: #fff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { margin: 0 0 10px 0; }
-        h2 { color: #0366d6; border-bottom: 2px solid #eee; padding-bottom: 8px; }
-        ul { padding-left: 20px; }
-    </style>
+    <meta name="description" content="我的個人作品集網站，記錄 AI、程式設計與網頁開發學習歷程。">
+    <title>我的個人作品集</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>你好，我是 winz254 👋</h1>
-        <p>長庚大學 人工智慧學系 大一學生</p>
-    </header>
-    <section>
-        <h2>關於我與興趣</h2>
-        <p>對人工智慧、機器學習與網頁開發充滿興趣，正在探索各種 AI 工具的實際應用。</p>
+
+<header class="site-header">
+    <nav class="nav container">
+        <a class="logo" href="#">我的作品集</a>
+        <div class="nav-links">
+            <a href="#about">關於我</a>
+            <a href="#interests">興趣</a>
+            <a href="#projects">作品</a>
+            <a href="#contact">聯絡</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <p class="tag">AI STUDENT · PORTFOLIO</p>
+            <h1>你好，我是<br><span>一名 AI 學習者。</span></h1>
+            <p class="hero-text">
+                歡迎來到我的個人作品集。<br>
+                這裡記錄我的學習歷程、興趣，以及一步一步完成的作品。
+            </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#projects">看看我的作品 <span>→</span></a>
+                <a class="button secondary" href="#about">認識我</a>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>為什麼我想學 AI？</h2>
-        <p>希望能掌握先進的 AI 技術，打造自動化與智慧化的解決方案，解決真實世界中的複雜問題。</p>
+
+    <section id="about" class="section">
+        <div class="container">
+            <p class="section-label">ABOUT ME</p>
+            <h2>關於我</h2>
+            <div class="about-card">
+                <div class="about-icon">✦</div>
+                <div>
+                    <p>
+                        我是一名對人工智慧與科技充滿興趣的學生。
+                        目前正在學習程式設計、Git、網頁開發以及 AI 工具，
+                        希望透過實作累積自己的能力，將想法真正做成作品。
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>專案作品 (Projects)</h2>
-        <ul>
-            <li><strong>個人品牌網站：</strong> 使用 Git、Codex CLI 與 GitHub Pages 打造的響應式個人作品集。</li>
-        </ul>
+
+    <section id="interests" class="section alt">
+        <div class="container">
+            <p class="section-label">MY INTERESTS</p>
+            <h2>我的興趣</h2>
+
+            <div class="grid three">
+                <article class="card">
+                    <div class="icon">🤖</div>
+                    <h3>人工智慧</h3>
+                    <p>探索 AI、機器學習以及生成式 AI 的應用，了解科技如何改變生活。</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">💻</div>
+                    <h3>程式設計</h3>
+                    <p>學習如何使用程式解決問題，並把學到的技術轉化成實用作品。</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🎮</div>
+                    <h3>遊戲與科技</h3>
+                    <p>喜歡接觸新的科技產品、數位娛樂，以及各種有趣的新工具。</p>
+                </article>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>聯絡方式 (Contact)</h2>
-        <p>Email: cloud20080304@gmail.com</p>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <p class="section-label">SELECTED PROJECTS</p>
+            <h2>我的作品</h2>
+
+            <div class="grid two">
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <div>
+                        <span class="project-tag">WEB DEVELOPMENT</span>
+                        <h3>個人作品集網站</h3>
+                        <p>
+                            使用 HTML 與 CSS 建立第一個個人作品集網站，
+                            並透過 GitHub Pages 發布到網路上。
+                        </p>
+                        <span class="tech">HTML · CSS · GitHub Pages</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <div>
+                        <span class="project-tag">AI PROJECT</span>
+                        <h3>AI 學習專案</h3>
+                        <p>
+                            未來將在這裡放入我的 AI 學習成果與實作作品，
+                            持續更新自己的學習紀錄。
+                        </p>
+                        <span class="tech">AI · Python · Generative AI</span>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <p class="section-label">GET IN TOUCH</p>
+                <h2>一起交流吧。</h2>
+                <p>如果你想了解我的學習歷程，歡迎透過以下方式聯絡我。</p>
+                <a class="email" href="mailto:your-email@example.com">your-email@example.com</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 我的個人作品集</p>
+        <p>Built with HTML & CSS</p>
+    </div>
+</footer>
+
+<script>
+    console.log("Welcome to my portfolio!");
+</script>
 </body>
 </html>
